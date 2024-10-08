@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES RAVELOMANANTSOA</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', cursive;
+            line-height: 1.5;
+            text-align: Left;
+text-size: 12;
+            background-image: url('https://scontent.ftnr4-2.fna.fbcdn.net/v/t1.6435-9/120194081_2780210852247894_6364008818311487621_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeFV-cNs4R1PJiPoMQopn_RZ77C2SZMEh47vsLZJkwSHjh01xvz7iVxl6F0A5pg-6gyBTgVYgUXl7xB0S1b9Rwts&_nc_ohc=pSV3vOCctR4Q7kNvgGf4oRD&_nc_ht=scontent.ftnr4-2.fna&_nc_gid=ALBzGuj4M6NAiBtxV_d9V5D&oh=00_AYCKe7TNoj3ObpGGic5ijJcS5o8GHI86VBbzLZhGmPdwqg&oe=672AFEAA');
+            background-size: 400px;
+height: 800px;
+            background-position: cover;
+        }
+        h1 {
+            color: #FF0000; 
+        }
+        h2 {
+            color: #0000FF; 
+        }
+        h3 {
+            color: #00FF00; 
+        }
+.photo-gallery{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 20px 0;
+}
+.photo-gallery img {
+width: 200px; /* Largeur des  images */
+height: 200px; /*  Hauteur des images */
+margin:10px; /* Espacement entre les images */
+border: 2px solid #FFF; /* Bordure blanche autour des images */
+border-radius: 10px; /* Bords arrondis */
+}
+nav ul {
+            list-style-type: none; /* Enlever les puces de la liste */
+            padding: 0; /* Enlever le remplissage par défaut */
+        }
+        nav ul li {
+            display: inline; /* Afficher les éléments de la liste en ligne */
+            margin: 0 10px; /* Espacement entre les éléments du menu */
+        }
+        nav a {
+            text-decoration: none; /* Enlever le soulignement des liens */
+            color: #000; /* Couleur des liens */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Souligner les liens au survol */
+        }
+.hidden {
+            display: none; /* Cacher les sections */
+}
+ </style>
+<script>
+ function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+      if (section.classList.contains("hidden")) {
+                section.classList.remove("hidden"); // Afficher la section
+            } else {
+                section.classList.add("hidden"); // Cacher la section
+            }
+        }
+
+function togglePhotos() {
+    toggleSection("photos");
+}
+
+function toggleAbout() {
+    toggleSection("aboutContent");
+}
+
+function toggleHobbies() {
+    toggleSection("hobbiesContent");
+}
+    </script>
+</head>
+<body>
+    <h1>Famille RAVELOMANANTSOA</h1>
+
+<!--  Menu de navigation -->
+<nav>
+<ul>
+<li><a href="#" onclick="toggleAbout(); return false;">À propos</a></li>
+        <li><a href="#" onclick="toggleHobbies(); return false;">Loisirs</a></li>
+        <li><a href="#" onclick="togglePhotos(); return false;">Photos</a></li>
+</ul>
+</nav>
+
+    <h2>Parents</h2>
+    <p>Mahery : Père</p>
+    <p>Fy Abeline : Mère</p>
+    <h3>Enfants</h3>
+    <p>Faniaiky : Aîné</p>
+    <p>Rohitsara : Cadette</p>
+    <p>Izahay dia fianankaviana mifankatia sy mifandray am-po, miaraka amin'Andriamanitra mandrakariva.</p>
+<p>Pour en savoir plus  sur notre famille, visite notre <a href="https://www.ravelomanantsoa.com">site</a>.</p>
+
+<!-- Section A propos -->
+<h2 id="about">A propos</h2>
+ <div id="aboutContent" class="hidden">
+<p>RAVELOMANANTSOA c'est le nom  de Famille  de  RAVELOMANANTSO Solofonirina, le Père de RAVELOMANANTSOA Mahery. Nous sommes fier de porter ce nom qui signifie "Raha Velona Manana ny Soa", c'est à dire, "si on est en vie, on a toujour le bonheur."
+Nous adorons  la vie simple,  et intègre beaucoup dans  la société.
+Nous sommes la famille RAVELOMANANTSOA, unis par l'AMOUR et les traditions.</p>
+</div>
+
+<!-- Section Loisirs -->
+<h2 id="hobbies">Loisirs</h2>
+ <div id="hobbiesContent" class="hidden">
+<p>Nous aimons passes du temps ensemble, ballader dans la campagne et faire des grillades.
+Nous regardons  parfois des  films  historique, des enquetes policiers, de braquage, ou de commedies, sans oublié le dessin animé des enfants.
+Nous adorons plus que tout de manger des plats préparé par RAVELOMANANTSOA lui même et  aussi la baignade.</p>
+</div>
+
+<!-- Section Photos -->
+  <div id="photos" class="hidden">
+     <h2>Photos</h2>
+<div class="photo-gallery">
+<img src="https://scontent.ftnr4-2.fna.fbcdn.net/v/t1.6435-9/120194081_2780210852247894_6364008818311487621_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeFV-cNs4R1PJiPoMQopn_RZ77C2SZMEh47vsLZJkwSHjh01xvz7iVxl6F0A5pg-6gyBTgVYgUXl7xB0S1b9Rwts&_nc_ohc=pSV3vOCctR4Q7kNvgGf4oRD&_nc_ht=scontent.ftnr4-2.fna&_nc_gid=ALBzGuj4M6NAiBtxV_d9V5D&oh=00_AYCKe7TNoj3ObpGGic5ijJcS5o8GHI86VBbzLZhGmPdwqg&oe=672AFEAA" alt="Photo de famille 1">
+        <img src="https://scontent.ftnr4-2.fna.fbcdn.net/v/t39.30808-6/255090978_3091918127743830_6746271598866669090_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGcuENSwOnJkB2DBclX_pAj-OuHVp1AdIT464dWnUB0hBB-aw9olEZBPDS0fQxNPlEUIL8uEGlAFG6VgrxmncdG&_nc_ohc=klooV-t6M-oQ7kNvgHQf4jb&_nc_ht=scontent.ftnr4-2.fna&_nc_gid=AKaTtunI3iHSmYOPEO5ALWI&oh=00_AYBiflvABOBo6psM0UjEiPLoAkUk4gjbraBAU8SJpX6IuA&oe=670ABA2A" alt="Photo de famille 2">
+        <img src="https://scontent.ftnr4-2.fna.fbcdn.net/v/t1.6435-9/120194081_2780210852247894_6364008818311487621_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeFV-cNs4R1PJiPoMQopn_RZ77C2SZMEh47vsLZJkwSHjh01xvz7iVxl6F0A5pg-6gyBTgVYgUXl7xB0S1b9Rwts&_nc_ohc=pSV3vOCctR4Q7kNvgGf4oRD&_nc_ht=scontent.ftnr4-2.fna&_nc_gid=A81GuHCDH5aZI9Wz7OODo15&oh=00_AYAIPpdzHHC1FiHqeRwTXe2-dZie5_vBT43fwUVwpHqa2A&oe=672C502A" alt="Photo de famille 3">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t1.18169-9/23167637_2006932142909106_8088227895150448510_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeFV5VNDhcLIjlqnA6LjLtMeoBsMmd-NADSgGwyZ340ANAzPEygM9r880hMa-sAu7c6tS2vhG3TSOVTAAsaXJhR0&_nc_ohc=4lBCuqTS34oQ7kNvgFJtIio&_nc_ht=scontent-muc2-1.xx&oh=00_AYCl7vB7ZFRb7TFXMLTUQVC9MkGv6V0htw21a_Xw2OYQ2g&oe=672C692B" alt="Photo de famille 4">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t31.18172-8/16819340_1880828772186111_1024641691894641745_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=b895b5&_nc_eui2=AeFrdwqIKUC6I-VDV_4qPZ0R0DVTd7UImsbQNVN3tQiaxsM2ownAI6dpnyKIbBg7RwR9aBZcsFMrEJtxszCkAYTZ&_nc_ohc=WADnS-iBvZcQ7kNvgEt7SqZ&_nc_ht=scontent-muc2-1.xx&_nc_gid=ARH_IrStsVXbWO0MdCa-o-A&oh=00_AYAH1AVhpzGEo1f7IW31zzqc8v7pINjSJSjoFD56HtsN5Q&oe=672C4704" alt="Photo de famille 5">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/256270406_3091921951076781_2317593506858218083_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHURN_10uvBmStHBubwA_ostep3eHAXg3S16nd4cBeDdGSJ7o1RIxVQvIoJTnvkdJ5rjJq3NrXm-Frj4nHLC6cn&_nc_ohc=wUXw_vsx3OMQ7kNvgFs5odm&_nc_ht=scontent-muc2-1.xx&_nc_gid=ArDtneK4xJqb2It4Kre8f2Z&oh=00_AYC7PvDLAVSO_oxbcnSaeCeHXgqoh8F_CyFUqZlXPxooHA&oe=670AAC93" alt="Photo de famille 6">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t1.6435-9/120194344_2780214932247486_5498596656150850094_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEZcO4Du4rkUvu8F27lMFdL8DspqaayYwDwOympprJjAFMO4IcqEeg0Ol7rgW8NzDfBbAWdtl_HLTVAu2BjtBO1&_nc_ohc=CLj_n2m2bTgQ7kNvgF24CWH&_nc_ht=scontent-muc2-1.xx&_nc_gid=AcvBLsvv24KtUe25eRzC3GL&oh=00_AYAeOO9rlLDdaui784oaqNoeKme5LM-jVvmIlmnd0fgMeQ&oe=672C69E9" alt="Photo de famille 7">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t1.6435-9/30571388_2084841931784793_5841992427002396672_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEB1hF3wVo5SFGvScZmhBHEviI6e0ArIga-Ijp7QCsiBsw_4y9CHcOZ_GSniAKzaU2AJzFzgWF6XqmSr2lDYaS2&_nc_ohc=wvt5t3tPtWMQ7kNvgGtWyTG&_nc_ht=scontent-muc2-1.xx&_nc_gid=AOUb-3HvU4uCes26J2CSl5y&oh=00_AYCEUBRnpdNrPdV5rOYMrnTGtc5NO9DHwC74hT5bHIU9dg&oe=672C48BD" alt="Photo de famille 8">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t1.18169-9/13442137_1757865687815754_5230442049116140700_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeHv8t-reC4uAqJjy6tQ6mFYosNgBA973zuiw2AED3vfOxFUxIw0mmjFDz9JxciMkkTydKDuo4mKGJfe2Zv6G_Hn&_nc_ohc=tVMVXi_OrL0Q7kNvgE3B7-O&_nc_ht=scontent-muc2-1.xx&oh=00_AYAIlmpGAGcCP6p1A34yxQISucDp1VLa0o0zTIoZRnVseQ&oe=672C522A" alt="Photo de famille 9">
+<img src="https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/448769180_3779932375609065_4977754639718393920_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH_XmcT821-kkXCJPdC6u0Eo9v-Zph3ghej2_5mmHeCF7u8ZaC1mlj1tIaQtphrd5PQo3wWvXp1pROUzdTsmBvv&_nc_ohc=85bQQQ12WYUQ7kNvgHsCFpJ&_nc_ht=scontent-muc2-1.xx&_nc_gid=AaUYE7s1LfhuZaIPjyWezhH&oh=00_AYCwD64ekZfs8TLUo0jpFX2Wbs2nyqvk9AWDPi2La_BzbQ&oe=670A9C3E" alt="Photo de famille 10">
+</div>
+</div>
+</body>
+</html>
